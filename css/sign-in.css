@@ -1,0 +1,235 @@
+/* header start */
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+
+}
+
+header {
+    background: #ffffff;
+    color: rgb(0, 156, 222);
+    min-height: 70px;
+    border-bottom: 3px rgb(34, 68, 204) solid;
+
+}
+
+header a,
+i {
+    color: rgb(93, 93, 94);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header li {
+    float: left;
+    padding: 0 20px 0 20px;
+    list-style: none;
+    font-family: 'Schibsted Grotesk', sans-serif
+}
+
+header #branding {
+    float: left;
+    padding-left: 20px;
+}
+
+header #branding h1 {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+
+}
+
+header .highlight {
+    color: rgb(0, 48, 135);
+    font-weight: bold;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+header a:hover,
+header i:hover {
+    color: rgb(18, 22, 97);
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* header over */
+/* element container*/
+.element-container {
+    background-color: rgb(18, 22, 97);
+    padding-top: 60px;
+    padding-bottom: 72px;
+    margin-top: 1rem;
+    text-align: left;
+    padding-left: 25rem;
+}
+
+#banner-text2 {
+    font-family: 'Schibsted Grotesk', sans-serif
+}
+
+#tunisia-pay {
+    color: rgb(126, 175, 208);
+    font-family: 'Schibsted Grotesk', sans-serif
+}
+
+#under-banner-text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#signup {
+    background-color: rgb(255, 196, 58);
+    color: rgb(18, 22, 97);
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+}
+
+#signup:hover {
+    cursor: pointer;
+    background-color: rgb(255, 196, 58);
+    color: white;
+    transition: .2s;
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+}
+
+
+/* footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 88px;
+
+}
+
+/* sign-in page */
+
+.container2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#element3-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 1px solid rgb(203, 203, 203);
+    width: 25%;
+    height: 680px;
+    margin-left: 750px;
+}
+
+.highlighted {
+    color: rgb(0, 48, 135);
+    font-weight: bold;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+#login2 {
+    color: rgb(0, 156, 222);
+    font-family: 'Schibsted Grotesk', sans-serif
+}
+
+#name {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(160, 160, 160);
+}
+
+#password {
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(160, 160, 160);
+}
+
+
+#password::placeholder {
+    padding-left: 20px;
+}
+
+#name::placeholder {
+    padding-left: 20px;
+}
+
+#signinB {
+    margin-top: 30px;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: rgb(26, 57, 179);
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: white;
+    transition: .2s;
+}
+
+#signinB:hover {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: rgb(46, 88, 255);
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: white;
+}
+
+#line {
+    margin-top: 30px;
+    width: 50%;
+}
+
+#or {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: rgb(89, 89, 89);
+}
+
+#signupB {
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(34, 68, 204);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: rgb(34, 68, 204);
+    transition: .2s;
+}
+
+#signupB:hover {
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border-width: 0px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(34, 68, 204);
+    font-family: 'Schibsted Grotesk', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
