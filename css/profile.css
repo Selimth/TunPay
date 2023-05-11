@@ -1,0 +1,136 @@
+/* header start */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background: #ffffff;
+    color: rgb(0, 156, 222);
+    min-height: 70px;
+    border-bottom: hsl(189, 72%, 31%) 3px solid;
+
+}
+
+header a {
+    color: rgb(93, 93, 94);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: bold;
+}
+
+header li {
+    float: left;
+    padding: 0 20px 0 20px;
+    list-style: none;
+    font-family: 'Schibsted Grotesk', sans-serif
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+
+}
+
+header .highlight {
+    color: rgb(0, 48, 135);
+    font-weight: bold;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+header a:hover,
+header i:hover {
+    color: rgb(18, 22, 97);
+    font-weight: bold;
+    transition: .3s;
+}
+
+.wallet {
+    margin-top: 15px;
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+}
+#yourBalance{
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: rgb(0, 156, 222);
+    padding-left: 100px;
+    padding-top: 20px;
+}
+#available{
+    padding-top: 40px;
+    padding-left: 70px;
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: rgb(60, 74, 80)
+}
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+  }
+  
+  button:hover {
+    border: 3px solid white;
+  }
+  
+  button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+               -4px -4px 12px #ffffff;
+  }
+  .buttons{
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+
+  .input {
+ 
+    border: 2px solid #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #87c7ec;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    
+}
+   
+   .input:focus {
+    outline-color: white;
+    background-color: #212121;
+    color: #e8e8e8;
+    box-shadow: 5px 5px #888888;
+    
+   }
+
+.inputs{
+    text-align: center;
+    padding-top: 20px;
+}
+#ps{
+    margin-top: 15px;
+}
+
+#balance{
+    text-align: center;
+    font-size: 50px;
+}
+
