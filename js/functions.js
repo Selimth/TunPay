@@ -1,81 +1,78 @@
-function each(coll, func) {
-    if (Array.isArray(coll)) {
-        for (var i = 0; i < coll.length; i++) {
-            func(coll[i], i);
-        }
-    } else {
-        for (var key in coll) {
-            func(coll[key], key);
-        }
-    }
-}
-
-function map(coll, func) {
-    var acc = [];
-    if (!Array.isArray(coll)) {
-        acc = {};
-    }
-    each(coll, function (element, key) {
-        acc[key] = func(element, key);
-    });
-    return acc;
-}
-
-function filter(array, predicate) {
-    var acc = [];
-    each(array, function (element, index) {
-        
-        if (predicate(element, index)) {
-            
-            acc.push(element);
-        }
-    });
-    return acc;
-}
-
-function reduce(array, f, acc) {
-    if (acc === undefined) {
-        acc = array[0];
-        array = array.slice(1);
-    }
-    each(array, function (element, i) {
-        acc = f(acc, element, i);
-    });
-    return acc;
-}
-
 var arr = []
-
-localStorage.setItem("data",JSON.stringify(arr))
+ localStorage.setItem("data",JSON.stringify(arr))
 // localStorage.setItem("data",JSON.stringify(arr))
 
 function MakeUser(name , ps ){
     var obj={}
     obj.name=name
     obj.ps = ps
-    obj.amount=0
-    obj.withdraw=withdraw()
-    obj.deposit=deposit()
-    obj.transfer=transfer()
     arr.push(obj)
+    console.log("arr",arr)
     var arr2=JSON.parse(localStorage.getItem("data"))
     arr2.push(obj)
+    console.log("arr2",arr2)
     localStorage.setItem("data",JSON.stringify(arr2))
     return obj
 }
 
-// function withdraw($("#n").val()){
-//     this.amount-=$("#n").val()
-// }
-
-// function deposit(n,ps){
-//     if(ps===this.ps){
-//         this.amount+=n 
-//     }
-// }
-
-// function transfer(n,ps){
-
-// }
 
 
+function withdraw(n){
+    var k=JSON.parse(localStorage.getItem("data"))
+    for(var i=0;i<k.length;i++){
+        if(k[i].ps===ps){
+            this.amount-=n 
+        }
+    }
+}
+
+function deposit(n,ps){
+    var k=JSON.parse(localStorage.getItem("data"))
+    for(var i=0;i<k.length;i++){
+        if(k[i].ps===ps){
+            this.amount+=n 
+        }
+    }
+    
+}
+
+function transfer(n,ps){
+    if(checkPs(ps) === true){
+        checkUser(n,$('#user').text())
+        this.amount-=n
+    }
+}
+
+function checkUser(n,user){
+    var k=JSON.parse(localStorage.getItem("data"))
+    for(var i = 0 ; i<k.length ; i++){
+            if(user === k[i].name){
+                this.amount+=n
+            }
+        }
+    }
+
+
+function checkPs(ps){
+    var k=JSON.parse(localStorage.getItem("data"))
+    for(var i = 0 ; i<k.length ; i++){
+            if(ps === k[i].ps){
+                return true
+            }
+        }
+    }
+
+ 
+$('#signinB').click(function(){
+
+    for(var i = 0 ; i<arr.length ; i++){
+        var users = arr[i]
+        for(var j in users){
+            if($('#name').val()=== this.name || $('#password').val()===this.ps){
+                window.location.href="profile.html";
+            }
+        }
+    }
+})
+// var name=document.getElementById("name").value
+$("#signupB").click(new MakeUser($("#name").val(),$("#password").val()))

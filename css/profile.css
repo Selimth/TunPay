@@ -56,25 +56,29 @@ header i:hover {
 
 .wallet {
     margin-top: 15px;
+    margin-left: 600px;
     width: 450px;
     height: 600px;
     border-radius: 30px;
     background: #e0e0e0;
     box-shadow: 15px 15px 30px #bebebe,
-               -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
 }
-#yourBalance{
+
+#yourBalance {
     font-family: 'Wix Madefor Text', sans-serif;
     color: rgb(0, 156, 222);
     padding-left: 100px;
     padding-top: 20px;
 }
-#available{
+
+#available {
     padding-top: 40px;
     padding-left: 70px;
     font-family: 'Wix Madefor Text', sans-serif;
     color: rgb(60, 74, 80)
 }
+
 button {
     color: #090909;
     padding: 0.7em 1.7em;
@@ -84,24 +88,25 @@ button {
     border: 1px solid #e8e8e8;
     transition: all .3s;
     box-shadow: 6px 6px 12px #c5c5c5,
-               -6px -6px 12px #ffffff;
-  }
-  
-  button:hover {
+        -6px -6px 12px #ffffff;
+}
+
+button:hover {
     border: 3px solid white;
-  }
-  
-  button:active {
+}
+
+button:active {
     box-shadow: 4px 4px 12px #c5c5c5,
-               -4px -4px 12px #ffffff;
-  }
-  .buttons{
+        -4px -4px 12px #ffffff;
+}
+
+.buttons {
     padding-top: 20px;
     padding-left: 25px;
-  }
+}
 
-  .input {
- 
+.input {
+
     border: 2px solid #e8e8e8;
     padding: 15px;
     border-radius: 10px;
@@ -110,27 +115,27 @@ button {
     font-weight: bold;
     text-align: center;
     padding-left: 20px;
-    
+
 }
-   
-   .input:focus {
+
+.input:focus {
     outline-color: white;
     background-color: #212121;
     color: #e8e8e8;
     box-shadow: 5px 5px #888888;
-    
-   }
 
-.inputs{
+}
+
+.inputs {
     text-align: center;
     padding-top: 20px;
 }
-#ps{
+
+#ps {
     margin-top: 15px;
 }
 
-#balance{
+#balance {
     text-align: center;
     font-size: 50px;
 }
-
