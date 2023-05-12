@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -27,7 +30,7 @@
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="../html/home-page.html">HOME</a></li>
+                    <li class="current"><a href="/html/home-page.html">HOME</a></li>
                     <li> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;<a href="/html/home-page.html">sign out</a></li>
                 </ul>
             </nav>
@@ -36,23 +39,26 @@
     <div id="wallet-holder">
     <div class="wallet">
         <div id="topp">
-            <h1 id="yourBalance">your balance</h1>
+            <h1 id="yourBalance">TunPay Balance</h1>
         </div>
-        <div id="balance"><h1 >0 $</h1></div>
+        <div id="balance"><h1 ><span id="variable"></span>$</h1></div>
         
-        <p id="available">available in your TunPay Cash account</p>
+        <p id="available">Available in your TunPay Cash account</p>
         <div class="buttons">
+            <center>
             <button id="deposit">Deposit</button>
             <button id="withdraw">Withdraw</button>
             <button id="transfer">Transfer</button>
+        </center>
         </div>
         <div class="inputs">
-            <input type="number" placeholder="enter the amount" class="input" id="n">
-            <input type="text"  placeholder="enter the name of the user" class="input" id="user">
-            <input type="text" placeholder="confirm your password " class="input" id="ps">
+            <input type="number" placeholder="Amount" class="input" id="n">
+            <input type="text"  placeholder="Username" class="input" id="user">
+            <input type="password" placeholder=" Password " class="input" id="ps">
         </div>        
     </div >
 </div>
     <script src="../js/functions.js"></script>
+    <script src="../js/amount-display.js"></script>
 </body>
 </html>

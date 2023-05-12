@@ -1,23 +1,26 @@
-/* header start */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 247, 250);
+    margin: 0;
+
 }
 
 header {
-    background: #ffffff;
+    background: rgb(245, 247, 250);
     color: rgb(0, 156, 222);
     min-height: 70px;
-    border-bottom: hsl(189, 72%, 31%) 3px solid;
+    border-bottom: 3px rgb(138, 139, 140) solid;
 
 }
 
-header a {
+header a,
+i {
     color: rgb(93, 93, 94);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
     font-family: 'Martel Sans', sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header li {
@@ -29,6 +32,7 @@ header li {
 
 header #branding {
     float: left;
+    padding-left: 20px;
 }
 
 header #branding h1 {
@@ -55,62 +59,100 @@ header i:hover {
 }
 
 .wallet {
-    margin-top: 15px;
-    margin-left: 600px;
-    width: 450px;
-    height: 600px;
-    border-radius: 30px;
-    background: #e0e0e0;
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #ffffff;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 1px solid rgb(203, 203, 203);
+    width: 25%;
+    height: 720px;
+    margin-left: 750px;
+    box-shadow: 1px 1px 10px rgb(203, 203, 203);
+}
+
+#balance {
+    font-family: 'Urbanist', sans-serif;
+    color: #222222;
+}
+
+#topp {
+    text-align: center;
 }
 
 #yourBalance {
-    font-family: 'Wix Madefor Text', sans-serif;
-    color: rgb(0, 156, 222);
-    padding-left: 100px;
+    font-family: 'Urbanist', sans-serif;
+    color: rgba(0, 112, 186, 0.704);
     padding-top: 20px;
 }
 
 #available {
-    padding-top: 40px;
-    padding-left: 70px;
-    font-family: 'Wix Madefor Text', sans-serif;
+    text-align: center;
+    padding-top: 0px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: large;
+    font-weight: bold;
     color: rgb(60, 74, 80)
 }
 
 button {
     color: #090909;
-    padding: 0.7em 1.7em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: #e8e8e8;
-    border: 1px solid #e8e8e8;
-    transition: all .3s;
-    box-shadow: 6px 6px 12px #c5c5c5,
-        -6px -6px 12px #ffffff;
+    font-size: large;
+    border-radius: 70px;
+    background: rgb(0, 112, 186);
+    border: none;
+    transition: .3s;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 500;
+    height: 50px;
 }
 
-button:hover {
-    border: 3px solid white;
-}
-
-button:active {
-    box-shadow: 4px 4px 12px #c5c5c5,
-        -4px -4px 12px #ffffff;
-}
 
 .buttons {
-    padding-top: 20px;
-    padding-left: 25px;
+    padding-top: 10px;
+}
+
+#deposit {
+    cursor: pointer;
+    width: 300px;
+}
+
+#withdraw {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+}
+
+#transfer {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+}
+
+#deposit:hover {
+    cursor: pointer;
+    width: 300px;
+    background-color: rgb(7, 143, 234);
+
+}
+
+#withdraw:hover {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+    background-color: rgb(7, 143, 234);
+}
+
+#transfer:hover {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+    background-color: rgb(7, 143, 234);
 }
 
 .input {
-
-    border: 2px solid #e8e8e8;
+    border: none;
     padding: 15px;
-    border-radius: 10px;
-    background-color: #87c7ec;
+    border-radius: 5px;
     font-size: small;
     font-weight: bold;
     text-align: center;
@@ -119,10 +161,8 @@ button:active {
 }
 
 .input:focus {
-    outline-color: white;
-    background-color: #212121;
-    color: #e8e8e8;
-    box-shadow: 5px 5px #888888;
+    color: #7d7d7d;
+    outline: none;
 
 }
 
@@ -133,6 +173,18 @@ button:active {
 
 #ps {
     margin-top: 15px;
+    background-color: white;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+#n {
+    background-color: white;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+#user {
+    background-color: white;
+    border: 1px solid rgb(203, 203, 203);
 }
 
 #balance {

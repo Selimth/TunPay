@@ -1,15 +1,15 @@
 /* header start */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 247, 250);
     margin: 0;
 
 }
 
 header {
-    background: #ffffff;
+    background: rgb(245, 247, 250);
     color: rgb(0, 156, 222);
     min-height: 70px;
-    border-bottom: 3px rgb(34, 68, 204) solid;
+    border-bottom: 3px rgb(138, 139, 140) solid;
 
 }
 
